@@ -1,0 +1,192 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# ==================================================
+# Hexo Butterfly 主题配置文件
+# 位置：/root/sukakawa/_config.butterfly.yml
+# ==================================================
+## Source: https://butterfly.js.org/posts/4aa8abbe/?highlight=dark
+
+# --------------------------------------
+# 导航设置
+# --------------------------------------
+nav:
+  logo: # 导航栏Logo图片
+  display_title: true
+  display_post_title: true
+  fixed: false
+
+# 菜单配置（按需修改）
+menu:
+  首页: / || fas fa-home
+  归档: /archives/ || fas fa-archive
+  标签: /tags/ || fas fa-tags
+  分类: /categories/ || fas fa-folder-open
+
+# --------------------------------------
+# 代码块设置
+# --------------------------------------
+
+code_blocks:
+  # 代码块主题: darker / pale night / light / ocean / false
+  theme: light
+  # 是否使用 Mac 风格
+  macStyle: false
+  # 代码块高度限制（单位: px）
+  height_limit: false
+  # 是否自动换行
+  word_wrap: false
+
+  # 工具栏
+  copy: true      # 复制按钮
+  language: true  # 语言标签
+  shrink: false   # 收缩/展开
+  fullpage: true # 全屏按钮
+
+# --------------------------------------
+# 图片和背景设置
+# --------------------------------------
+favicon: /img/favicon.png  # 网站图标
+
+# 头像
+avatar:
+  img: # 头像链接
+  effect: false
+
+# 背景设置（你想要的透明背景效果）
+background: /img/wallpaper.png  # 网站背景图片
+
+# 禁用所有顶部图片
+disable_top_img: false
+# 顶部图片
+default_top_img: # 默认顶部图片
+index_img: # 首页顶部图片
+archive_img: # 归档页面顶部图片
+tag_img: # 标签页面顶部图片
+category_img: # 分类页面顶部图片
+
+# --------------------------------------
+# 文章设置
+# --------------------------------------
+toc:
+  post: true
+  page: false
+  number: true
+  expand: false
+  style_simple: false
+  scroll_percent: true
+
+post_copyright:
+  enable: true
+  decode: false
+  license: CC BY-NC-SA 4.0
+  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+# --------------------------------------
+# 侧边栏设置
+# --------------------------------------
+aside:
+  enable: true
+  hide: false
+  button: true
+  mobile: true
+  position: right
+  card_author:
+    enable: true
+    description: # 作者描述
+    button:
+      enable: true
+      icon: fab fa-github
+      text: 关注我
+      link: https://github.com/yourname
+
+  card_announcement:
+    enable: true
+    content: 欢迎来到我的博客！
+
+  card_recent_post:
+    enable: true
+    limit: 5
+
+  card_categories:
+    enable: true
+    limit: 8
+
+  card_tags:
+    enable: true
+    limit: 40
+    color: false
+
+  card_archives:
+    enable: true
+    type: monthly
+    limit: 8
+
+# --------------------------------------
+# 右下角功能按钮
+# --------------------------------------
+readmode: true  # 阅读模式
+
+# 默认显示模式：light（亮色） / dark（暗色）
+display_mode: dark  # 设置为暗色主题
+darkmode:  # 暗黑模式
+  enable: true
+  button: true
+  autoChangeMode: false
+
+# --------------------------------------
+# 自定义CSS注入
+# --------------------------------------
+inject:
+  head:
+    - <link rel="stylesheet" href="/css/custom.css">
+  bottom:
+    - |
+    # 可以在这里添加自定义JS
+
+
+# --------------------------------------
+# 其他常用设置
+# --------------------------------------
+# 数学公式
+math:
+  per_page: true
+
+# 搜索
+#search:
+#  use: local_search
+#  placeholder: 搜索文章...
+
+# 评论系统（按需启用）
+#comments:
+#  use: # 例如: Valine, Waline, Gitalk
+#  text: true
+  lazyload: true
+
+#点击烟花特效
+fireworks:
+  enable: true
+  zIndex: 9999 # -1 or 9999
+  mobile: true
+
+#刷新彩带
+canvas_ribbon:
+  enable: false
+  # The size of ribbon
+  size: 150
+  # The opacity of ribbon (0 ~ 1)
+  alpha: 0.6
+  zIndex: -1
+  click_to_change: false
+  mobile: false
+
+
+# 页脚
+footer:
+  owner:
+    enable: true
+    since: 2026
+  copyright:
+    enable: true
+    version: true

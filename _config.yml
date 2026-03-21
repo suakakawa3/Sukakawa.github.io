@@ -121,4 +121,5 @@ theme: redefine
 deploy:
   type: 'git'
   repository: git@github.com:suakakawa3/Sukakawa.github.io.git
-  branch: master
+#  branch: master
+  branch: gh-pages

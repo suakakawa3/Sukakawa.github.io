@@ -123,9 +123,3 @@ deploy:
   repository: git@github.com:suakakawa3/Sukakawa.github.io.git
 #  branch: master
   branch: gh-pages
-
-search:
-  path: search.json       # 生成的搜索数据文件路径，可改为 search.xml
-  field: all              # 搜索范围: post(仅文章) | page(仅页面) | all(全部)
-  content: true           # 是否包含全文内容
-  format: html            # 内容格式: html | striptags | raw
